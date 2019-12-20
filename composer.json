@@ -1,5 +1,5 @@
 {
-  "name": "efrei-testing-project",
+  "name": "efrei/testing",
   "description": "Efrei testing project",
   "require": {
     "php": "^7.3.0"
