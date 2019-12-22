@@ -1,0 +1,23 @@
+{
+  "name": "efrei-testing-project",
+  "version": "1.0.0",
+  "description": "efrei SE testing project",
+  "main": "st2tst_js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "perf": "./node_modules/gatlingjs/dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louisinger/efrei-testing-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louisinger/efrei-testing-project/issues"
+  },
+  "homepage": "https://github.com/louisinger/efrei-testing-project#readme",
+  "devDependencies": {
+    "gatlingjs": "0.0.7"
+  }
+}

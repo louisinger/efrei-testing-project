@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gatling:
+    image: 'denvazh/gatling'
+    container_name: 'gatling-container'
+    # restart: always
+    volumes:
+      - ./test/performance/conf:/opt/gatling/conf
+      - ./test/performance/user-files:/opt/gatling/user-files
+      - ./test/performance/results:/opt/gatling/results

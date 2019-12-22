@@ -1,0 +1,10 @@
+{
+  "simulation": "testing.project.LoadServerSimulation",
+  "simulationId": "loadserversimulation",
+  "start": 1577023251190,
+  "description": "First load testing using gatling and a basic scenario",
+  "scenarios": ["BasicLoadServerSimulation"],
+  "assertions": [
+
+  ]
+}
