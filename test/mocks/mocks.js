@@ -7,8 +7,7 @@ const html = fs.readFileSync(
 const test = require("../../st2tst_js");
 
 /*   
-  checkBirth,
-  checkMineur,
+ 
   checkNumTelephone,
   checkCodePostal,
   checkCityDijon,

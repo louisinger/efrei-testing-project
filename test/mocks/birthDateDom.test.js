@@ -4,7 +4,7 @@ const html = fs.readFileSync(
   path.resolve(__dirname, "../../index.html"),
   "utf8"
 );
-const test = require("../../st2tst_js");
+const functions = require("../../st2tst_js");
 
 /*   
   onLoadFunction,
@@ -20,7 +20,7 @@ describe("Birth date day element", () => {
   });
 
   it("Select created and options added", function() {
-    const mockFunction = jest.fn(test.setJourDateDeNaissance);
+    const mockFunction = jest.fn(functions.setJourDateDeNaissance);
     mockFunction();
     expect(mockFunction.mock.calls.length).toBe(1);
 
@@ -38,7 +38,7 @@ describe("Birth date month element", () => {
   });
 
   it("Select created and options added", function() {
-    const mockFunction = jest.fn(test.setMoisDateDeNaissance);
+    const mockFunction = jest.fn(functions.setMoisDateDeNaissance);
     mockFunction();
     expect(mockFunction.mock.calls.length).toBe(1);
 
@@ -50,19 +50,18 @@ describe("Birth date month element", () => {
 
 // Checks if the birth date year select element was created properly
 describe("Birth date year element", () => {
-    // To simulate the dom creation
-    beforeEach(() => {
-      document.documentElement.innerHTML = html.toString();
-    });
-  
-    it("Select created and options added", function() {
-      const mockFunction = jest.fn(test.setAnneeDateDeNaissance);
-      mockFunction();
-      expect(mockFunction.mock.calls.length).toBe(1);
-  
-      expect(document.getElementById("aDn")).toBeTruthy();
-      expect(document.getElementById("aDn").children).toBeTruthy();
-      expect(document.getElementById("aDn").children.length).toBe(12);
-    });
+  // To simulate the dom creation
+  beforeEach(() => {
+    document.documentElement.innerHTML = html.toString();
   });
-  
+
+  it("Select created and options added", function() {
+    const mockFunction = jest.fn(functions.setAnneeDateDeNaissance);
+    mockFunction();
+    expect(mockFunction.mock.calls.length).toBe(1);
+
+    expect(document.getElementById("aDn")).toBeTruthy();
+    expect(document.getElementById("aDn").children).toBeTruthy();
+    expect(document.getElementById("aDn").children.length).toBe(201);
+  });
+});
