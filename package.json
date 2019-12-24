@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/louisinger/efrei-testing-project#readme",
   "devDependencies": {
-    "gatlingjs": "0.0.7"
+    "gatlingjs": "0.0.7",
+    "jest": "^24.9.0"
   }
 }
