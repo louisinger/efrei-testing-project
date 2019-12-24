@@ -300,8 +300,6 @@ function validateForm () {
   // (ce qui crée la nouvelle page)
   document.write(stringResume)
 
-	}
-
 module.exports = {
   onLoadFunction,
   setJourDateDeNaissance,
