@@ -2,7 +2,7 @@
 	function onLoadFunction() {
     	document.getElementById("nom").focus();
     	setJourDateDeNaissance();
-			setMoisDateDeNaissance();
+		setMoisDateDeNaissance();
     	setAnneeDateDeNaissance();
 	}
 
@@ -302,3 +302,5 @@
 		document.write(stringResume);
 
 	}
+
+module.exports = { onLoadFunction, setJourDateDeNaissance };
