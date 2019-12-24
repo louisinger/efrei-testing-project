@@ -1,0 +1,10 @@
+{
+  "simulation": "testing.project.EnduranceSimulation",
+  "simulationId": "endurancesimulation",
+  "start": 1577097878556,
+  "description": "Endurance testing",
+  "scenarios": ["BasicUserConnection"],
+  "assertions": [
+
+  ]
+}

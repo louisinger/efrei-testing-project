@@ -1,0 +1,10 @@
+{
+  "simulation": "testing.project.StressSimulation",
+  "simulationId": "stresssimulation",
+  "start": 1577100699710,
+  "description": "Sress si�mulation",
+  "scenarios": ["BasicUserConnection"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "simulation": "testing.project.PeakSimulation",
+  "simulationId": "peaksimulation",
+  "start": 1577099645742,
+  "description": "Peak testing",
+  "scenarios": ["BasicUserConnection"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "simulation": "testing.project.NormalActivitySimulation",
+  "simulationId": "normalactivitysimulation",
+  "start": 1577097416650,
+  "description": "Normal activity",
+  "scenarios": ["BasicUserConnection"],
+  "assertions": [
+
+  ]
+}
