@@ -13,45 +13,6 @@ expect.extend({ toBeVisible });
  checkBirth : click sur vérifier
   checkMineur,
   */
-
-/*   var dateNaissance = new Date(
-    document.getElementById("aDn").value +
-      "-" +
-      document.getElementById("mDn").value +
-      "-" +
-      document.getElementById("jDn").value
-  );*/
-/*describe("Check if date valid", () => {
-  beforeEach(() => {
-    document.documentElement.innerHTML = html.toString();
-  });
-
-  it("displays error if date in future", () => {
-    $("#aDn")
-      .children(":selected")
-      .text("2050");
-    $("#mDn")
-      .children(":selected")
-      .text("01");
-    $("#jDn")
-      .children(":selected")
-      .text("01");
-
-    functions.checkBirth();
-    console.log(
-      '$("#errorDateNaissance"): ',
-      getComputedStyle(document.getElementById("errorDateNaissance"), null)
-    );
-    expect($("#errorDateNaissance")).toBeTruthy();
-  });
-
-  it("displays error if underage", () => {});
-
-  it("displays valid", () => {});
-});*/
-
-jest.mock("../../st2tst_js.js");
-
 test("Check if date valid", () => {
   document.body.innerHTML =
     "<div>" +
@@ -70,4 +31,20 @@ test("Check if date valid", () => {
 
   $("#verifier").click();
   expect(document.querySelector("#errorDateNaissance")).not.toBeVisible();
+});
+
+describe("CheckMineur function", () => {
+  it("should return true", () => {
+    const today = new Date();
+    const birthDate = new Date("2005-01-01");
+
+    expect(functions.checkMineur(today, birthDate)).toBe(true);
+  });
+
+  it("should return false", () => {
+    const today = new Date();
+    const birthDate = new Date("1980-01-01");
+
+    expect(functions.checkMineur(today, birthDate)).toBe(true);
+  });
 });
