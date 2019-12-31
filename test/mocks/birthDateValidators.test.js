@@ -45,6 +45,6 @@ describe("CheckMineur function", () => {
     const today = new Date();
     const birthDate = new Date("1980-01-01");
 
-    expect(functions.checkMineur(today, birthDate)).toBe(true);
+    expect(functions.checkMineur(today, birthDate)).toBe(false);
   });
 });
