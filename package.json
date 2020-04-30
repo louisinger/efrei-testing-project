@@ -23,6 +23,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "gatlingjs": "0.0.7",
     "jest": "^24.9.0",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
